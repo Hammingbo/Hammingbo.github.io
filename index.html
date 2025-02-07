@@ -168,127 +168,21 @@
 
 
 
-
-
-
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Text-driven image and video diffusion models have recently achieved unprecedented generation realism. While diffusion models have been successfully applied for image editing, very few works have done so for video editing. We present the first diffusion-based method that is able to perform text-based motion and appearance editing of general videos. Our approach uses a video diffusion model to combine, at inference time, the low-resolution spatio-temporal information from the original video with new, high resolution information that it synthesized to align with the guiding text-prompt. As obtaining high-fidelity to the original video requires retaining some of its high-resolution information, we add a preliminary stage of finetuning the model on the original video, significantly boosting fidelity. We propose to improve motion editability by a new, mixed objective that jointly finetunes with full temporal attention and with temporal attention masking. We further introduce a new framework for image animation. We first transform the image into a coarse video by simple image processing operations such as replication and perspective geometric projections, and then use our general video editor to animate it. As a further application, we can use our method for subject-driven video generation. Extensive qualitative and numerical experiments showcase the remarkable editing ability of our method and establish its superior performance compared to baseline methods.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
 <!-- Vid2vid carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container  is-max-desktop">
-      <h2 class="title is-3">Video Editing</h2>
+      <h2 class="title is-3" style="text-align: center;">PPVctrl-5B-I2V-Canny</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="" id="vid2vid_video1" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_leaping.mp4">
+          <video poster="" id="vid2vid_video1" playsinline autoplay muted loop height="90%" src="static/videos/canny_case1.mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <video poster="" id="vid2vid_video2" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_party_hat.mp4">
+          <video poster="" id="vid2vid_video2" playsinline autoplay muted loop height="90%" src="static/videos/canny_case2.mp4">
           </video>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="vid2vid_video3" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_robot.mp4">
-          </video>
         </div>
-        <div class="item item-video4">
-          <video poster="" id="vid2vid_video4" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_cake.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video5">
-          <video poster="" id="vid2vid_video5" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_orangutan_hello.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video6">
-          <video poster="" id="vid2vid_video6" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_truck_zoom.mp4">
-          </video>
-        </div>
-
-
-        <div class="item item-video7">
-          <video poster="" id="vid2vid_video7" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_fire.mp4">
-          </video>
-        </div>
-
-
-        <div class="item item-video8">
-          <video poster="" id="vid2vid_video8" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_cats.mp4">
-          </video>
-        </div>
-
-
-        <div class="item item-video9">
-          <video poster="" id="vid2vid_video9" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_skateboard.mp4">
-          </video>
-        </div>
-
-
-        <div class="item item-video10">
-          <video poster="" id="vid2vid_video10" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_truck_logs.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video11">
-          <video poster="" id="vid2vid_video11" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_noodles.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video12">
-          <video poster="" id="vid2vid_video12" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_circle.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video13">
-          <video poster="" id="vid2vid_video13" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_orangutan_hello2.mp4">
-          </video>
-        </div>
-
-
-        <div class="item item-video14">
-          <video poster="" id="vid2vid_video14" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_football.mp4">
-          </video>
-        </div>
-
-
-        <div class="item item-video15">
-          <video poster="" id="vid2vid_video15" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_orangutan_bath.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video16">
-          <video poster="" id="vid2vid_video16" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_truck_river.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video17">
-          <video poster="" id="vid2vid_video17" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_swans.mp4">
-          </video>
-        </div>
-
-        <div class="item item-video18">
-          <video poster="" id="vid2vid_video18" playsinline autoplay muted loop height="90%" src="static/videos/vid2vid_saxophone.mp4">
-          </video>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -375,7 +269,22 @@
 </section>
 <!-- End Subject Driven Video Generation carousel -->
 
-
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Text-driven image and video diffusion models have recently achieved unprecedented generation realism. While diffusion models have been successfully applied for image editing, very few works have done so for video editing. We present the first diffusion-based method that is able to perform text-based motion and appearance editing of general videos. Our approach uses a video diffusion model to combine, at inference time, the low-resolution spatio-temporal information from the original video with new, high resolution information that it synthesized to align with the guiding text-prompt. As obtaining high-fidelity to the original video requires retaining some of its high-resolution information, we add a preliminary stage of finetuning the model on the original video, significantly boosting fidelity. We propose to improve motion editability by a new, mixed objective that jointly finetunes with full temporal attention and with temporal attention masking. We further introduce a new framework for image animation. We first transform the image into a coarse video by simple image processing operations such as replication and perspective geometric projections, and then use our general video editor to animate it. As a further application, we can use our method for subject-driven video generation. Extensive qualitative and numerical experiments showcase the remarkable editing ability of our method and establish its superior performance compared to baseline methods.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
 
 <section class="section hero is-small is-light">
   <div class="container is-max-desktop">
