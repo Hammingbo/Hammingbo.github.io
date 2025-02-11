@@ -136,7 +136,11 @@
 <section class="hero teaser">
       <div class="hero-body ">
     <div class="container is-max-desktop">
-  
+      <h1 style="font-weight: bold; text-align: justify; font-size: 20px;">
+        We propose PP-Vctrl, a controllable video generation model that uses an auxiliary condition encoder to transform a text-to-video or image-to-video generation model into a custom video generator, without retraining of the original generator.
+    </h1>
+    
+    
       <div id="results-carousel" class="carousel results-carousel">
         
         <div class="item item-video1">
@@ -144,8 +148,8 @@
             <source src="static/videos/canny_full_size.mp4"
             type="video/mp4">
           </video>
-        <h2 class="subtitle has-text-centered">
-          "Given any video, after extracting the video edges frame by frame, PP-VCtrl can easily help you achieve video-to-video transformation."
+        <h2 class="subtitle has-text-centered",style="font-weight: bold">
+          " PPVCtrl-Canny can effortlessly assist creators in achieving style transfer from video to artwork by leveraging the video's edge features as control conditions."
         </h2>
         </div>
 
@@ -155,7 +159,7 @@
             type="video/mp4">
           </video>
         <h2 class="subtitle has-text-centered">
-          "Select the subject you want to edit in the video, and after extracting the video subject mask frame by frame , PP-VCtrl can easily help you achieve precise video editing."
+          " PPVCtrl-Mask allows creators to easily perform diverse video editing tasks by selecting the specific content to be edited, enabling efficient customization."
         </h2>
         </div>
 
@@ -165,7 +169,7 @@
             type="video/mp4">
           </video>
         <h2 class="subtitle has-text-centered">
-          "By extracting pose control conditions from human motion videos, PP-VCtrl helps you achieve customized dance video generation."
+          "PPVCtrl-Pose enables creators to effortlessly achieve customized generation of character motion videos by extracting pose conditions."
         </h2>
         </div>
 
@@ -183,9 +187,11 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container  is-max-desktop">
-      <h2 class="title is-3" style="text-align: center;">PPVCtrl-5B-I2V-Canny</h2>
-      <p class="subtitle" style="text-align: center; margin-top: 10px;">
-        这里是您可以描述 PPVCtrl-5B-I2V-Canny 模型的简短说明或介绍。可以写一些有关该技术、功能或使用场景的内容。
+      <h2 class="title is-3" style="text-align: center;">PPVCtrl-Canny-I2V</h2>
+      <p class="subtitle" style="text-align: left; margin-top: 10px;">
+        First, you should perform Canny edge detection on the Source Video to obtain the corresponding Control Video. 
+        Then, use ControlNet-Canny to redraw the first frame of the video to obtain the Reference Image. 
+        Finally, use the Control Video and Reference Image as conditions to generate a stylistically different video.
       </p>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
@@ -206,9 +212,11 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container  is-max-desktop">
-      <h2 class="title is-3" style="text-align: center;">PPVCtrl-5B-I2V-Mask</h2>
-      <p class="subtitle" style="text-align: center; margin-top: 10px;">
-        这里是您可以描述 PPVCtrl-5B-I2V-Canny 模型的简短说明或介绍。可以写一些有关该技术、功能或使用场景的内容。
+      <h2 class="title is-3" style="text-align: center;">PPVCtrl-Mask-I2V</h2>
+      <p class="subtitle" style="text-align: left; margin-top: 10px;">
+        First, you are expected to select the subject to be edited from the source video and use SAM2 for subject segmentation to obtain the control video. 
+        Then, use Image Inpainting to edit the first frame of the video to obtain the reference image. 
+        Finally, use the control video and reference image as conditions to edit the entire video.
       </p>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
@@ -229,9 +237,11 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container  is-max-desktop">
-      <h2 class="title is-3" style="text-align: center;">PPVCtrl-5B-I2V-Pose</h2>
-      <p class="subtitle" style="text-align: center; margin-top: 10px;">
-        这里是您可以描述 PPVCtrl-5B-I2V-Canny 模型的简短说明或介绍。可以写一些有关该技术、功能或使用场景的内容。
+      <h2 class="title is-3" style="text-align: center;">PPVCtrl-Pose-I2V</h2>
+      <p class="subtitle" style="text-align: left; margin-top: 10px;">
+        First, you can use a pose detection model to obtain the sequence of poses from the source video. 
+        Then, use ControlNet-Pose to regenerate the first frame of the video, obtaining the reference image. 
+        Finally, use the control video and reference image as conditions to perform style transfer and redraw the video.
       </p>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
