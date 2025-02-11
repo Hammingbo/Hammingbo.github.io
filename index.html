@@ -22,6 +22,7 @@
   <title>PPVCtrl: Controllable Video Generation Model Based on Text-to-Video Diffusion Model  </title>
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
+  <link rel="icon" type="image/png" href="static/images/image.jpg">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -46,7 +47,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">PPVCtrl: Controllable Video Generation Model Based on Text-to-Video Diffusion Model</h1>
+            <h1 class="title is-1 publication-title">PP-VCtrl: Controllable Video Generation Model Based on Text-to-Video Diffusion Model</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
              <span class="author-block">
@@ -93,6 +94,16 @@
                     <span>Paper</span>
                   </a>
                 </span>
+              <!-- Github link -->
+              <span class="link-block">
+                <a href="https://github.com/Hammingbo/PaddleMIX/tree/develop/ppdiffusers/examples/ppvctrl" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+            </span>
 
 
 
@@ -134,17 +145,17 @@
             type="video/mp4">
           </video>
         <h2 class="subtitle has-text-centered">
-          Given a inference image and a text prompt, PPVctrl can rewrite the original video.
+          "Given any video, after extracting the video edges frame by frame, PP-VCtrl can easily help you achieve video-to-video transformation."
         </h2>
         </div>
 
         <div class="item item-video2">
           <video poster="" id="header-video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/canny_full_size.mp4"
+            <source src="static/videos/mask_full_size.mp4"
             type="video/mp4">
           </video>
         <h2 class="subtitle has-text-centered">
-          Given a inference image and a text prompt, PPVctrl can rewrite the original video.
+          "Select the subject you want to edit in the video, and after extracting the video subject mask frame by frame , PP-VCtrl can easily help you achieve precise video editing."
         </h2>
         </div>
 
@@ -154,7 +165,7 @@
             type="video/mp4">
           </video>
         <h2 class="subtitle has-text-centered">
-          Given a inference image and a text prompt, PPVctrl can rewrite the original video.
+          "By extracting pose control conditions from human motion videos, PP-VCtrl helps you achieve customized dance video generation."
         </h2>
         </div>
 
@@ -168,11 +179,14 @@
 
 
 
-<!-- Vid2vid carousel -->
+<!-- Canny v2v -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container  is-max-desktop">
-      <h2 class="title is-3" style="text-align: center;">PPVctrl-5B-I2V-Canny</h2>
+      <h2 class="title is-3" style="text-align: center;">PPVCtrl-5B-I2V-Canny</h2>
+      <p class="subtitle" style="text-align: center; margin-top: 10px;">
+        这里是您可以描述 PPVCtrl-5B-I2V-Canny 模型的简短说明或介绍。可以写一些有关该技术、功能或使用场景的内容。
+      </p>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="vid2vid_video1" playsinline autoplay muted loop height="90%" src="static/videos/canny_case1.mp4">
@@ -186,88 +200,56 @@
     </div>
   </div>
 </section>
-<!-- End vid2vid carousel -->
+<!-- End Canny v2v -->
 
-
-<!-- Img2vid carousel -->
-<section class="hero is-small is-light">
+<!-- Mask v2v -->
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container  is-max-desktop">
-      <h2 class="title is-3">Image-to-Video</h2>
+      <h2 class="title is-3" style="text-align: center;">PPVCtrl-5B-I2V-Mask</h2>
+      <p class="subtitle" style="text-align: center; margin-top: 10px;">
+        这里是您可以描述 PPVCtrl-5B-I2V-Canny 模型的简短说明或介绍。可以写一些有关该技术、功能或使用场景的内容。
+      </p>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="" id="img2vid_video1" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_plant.mp4">
+          <video poster="" id="vid2vid_video1" playsinline autoplay muted loop height="90%" src="static/videos/mask_case1.mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <video poster="" id="img2vid_video2" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_buffalo.mp4">
+          <video poster="" id="vid2vid_video2" playsinline autoplay muted loop height="90%" src="static/videos/mask_case2.mp4">
           </video>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="img2vid_video3" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_grizzly.mp4">
-          </video>
         </div>
-
-        <div class="item item-video4">
-          <video poster="" id="img2vid_video4" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_coffee.mp4">
-          </video>
-        </div>
-
-      <div class="item item-video5">
-          <video poster="" id="img2vid_video5" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_camel.mp4">
-          </video>
-        </div>
-      <div class="item item-video6">
-          <video poster="" id="img2vid_video6" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_pengiun.mp4">
-          </video>
-        </div>
-      <div class="item item-video7">
-          <video poster="" id="img2vid_video7" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_unicorn.mp4">
-          </video>
-        </div>
-
-      <div class="item item-video8">
-          <video poster="" id="img2vid_video8" playsinline autoplay muted loop height="90%" src="static/videos/img2vid_bigfoot.mp4">
-          </video>
-        </div>
-      </div>
     </div>
   </div>
 </section>
-<!-- End img2vid carousel -->
+<!-- End Mask v2v -->
 
-
-<!-- Subject Driven Video Generation carousel -->
+<!-- Pose v2v -->
 <section class="hero is-small">
-  <div class="hero-body ">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">Subject Driven Video Generation</h2>
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <h2 class="title is-3" style="text-align: center;">PPVCtrl-5B-I2V-Pose</h2>
+      <p class="subtitle" style="text-align: center; margin-top: 10px;">
+        这里是您可以描述 PPVCtrl-5B-I2V-Canny 模型的简短说明或介绍。可以写一些有关该技术、功能或使用场景的内容。
+      </p>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="" id="sd_video1" playsinline autoplay muted loop height="90%" src="static/videos/subj_driv_walking.mp4">
+          <video poster="" id="vid2vid_video1" playsinline autoplay muted loop height="90%" src="static/videos/pose_case1.mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <video poster="" id="sd_video2" playsinline autoplay muted loop height="90%" src="static/videos/subj_driv_drinking.mp4">
+          <video poster="" id="vid2vid_video2" playsinline autoplay muted loop height="90%" src="static/videos/pose_case2.mp4">
           </video>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="sd_video3" playsinline autoplay muted loop height="90%" src="static/videos/subj_driv_dancing.mp4">
-          </video>
         </div>
-        <div class="item item-video4">
-          <video poster="" id="sd_video4" playsinline autoplay muted loop height="90%" src="static/videos/subj_driv_stretching.mp4">
-          </video>
-        </div>
-        <div class="item item-video5">
-          <video poster="" id="sd_video5" playsinline autoplay muted loop height="90%" src="static/videos/subj_driv_magnifying.mp4">
-          </video>
-        </div>
-      </div>
     </div>
   </div>
 </section>
-<!-- End Subject Driven Video Generation carousel -->
+<!-- End Pose v2v -->
+
+
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
