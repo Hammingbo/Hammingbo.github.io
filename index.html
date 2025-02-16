@@ -50,10 +50,10 @@
             <h1 class="title is-1 publication-title">PP-VCtrl: Controllable Video Generation Model Based on Text-to-Video Diffusion Model</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-             <span class="author-block">
+             <!-- <span class="author-block">
                 Eyal Molad<sup>*,1</sup>,
-              </span>
-              <span class="author-block">
+              </span> -->
+              <!-- <span class="author-block">
                 <a href="https://pages.cs.huji.ac.il/eliahu-horwitz/" target="_blank">Eliahu Horwitz</a><sup>*,1,2</sup>,
               </span>
               <span class="author-block">
@@ -63,40 +63,37 @@
                 <a href="https://www.linkedin.com/in/alexravacha" target="_blank">Alex Rav Acha</a><sup>1</sup>,
               </span>
               <span class="author-block">
-                Yossi Matias<sup>1</sup>,
-              </span>
+                Yossi Matias<sup>1</sup>, -->
+              <!-- </span>
               <span class="author-block">
                 Yael Pritch<sup>1</sup>,
               </span>
               <span class="author-block">
-                 <a href="https://yanivle.github.io/" target="_blank">Yaniv Leviathan</a><sup>†,1</sup>,
-              </span>
+                 <a href="https://yanivle.github.io/" target="_blank">Yaniv Leviathan</a><sup>†,1</sup>, -->
+              <!-- </span>
               <span class="author-block">
                 <a href="http://www.cs.huji.ac.il/~ydidh" target="_blank">Yedid Hoshen</a><sup>†,1,2</sup>
               </span>
-            </div>
+            </div> -->
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Google Research,</span>
-              <span class="author-block"><sup>2</sup>The Hebrew University of Jerusalem</span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution, <sup>†</sup>Indicates Equal Advising</small></span>
-              <span class="eql-cntrb"><small></small></span>
+              <span class="author-block"><sup>1</sup>Baidu Inc</span>
             </div>
 
-            <div class="column has-text-centered">
-              <div class="publication-links">
+            <!-- <div class="column has-text-centered">
+              <div class="publication-links"> -->
                 <!-- Arxiv PDF link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/pdf/2302.01329.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
                     <span>Paper</span>
                   </a>
-                </span>
+                </span> -->
               <!-- Github link -->
               <span class="link-block">
-                <a href="https://github.com/Hammingbo/PaddleMIX/tree/develop/ppdiffusers/examples/ppvctrl" target="_blank"
+                <a href="https://github.com/PaddleMIX/tree/develop/ppdiffusers/examples/ppvctrl" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <i class="fab fa-github"></i>
@@ -108,7 +105,7 @@
 
 
             <!-- ArXiv abstract Link -->
-            <span class="link-block">
+            <!-- <span class="link-block">
               <a href="https://arxiv.org/abs/2302.01329" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
@@ -116,7 +113,7 @@
                 </span>
                 <span>arXiv</span>
               </a>
-            </span>
+            </span> -->
           </div>
         </div>
       </div>
@@ -129,23 +126,21 @@
 
 
 
+<h2 class="title is-3" style="text-align: center;">DEMOS SHOW</h2>
+<h1 style="font-weight: bold; text-align: center; font-size: 16px;">
+  We propose PP-Vctrl, a controllable video generation model that uses an auxiliary condition encoder to transform a text-to-video or image-to-video generation model into a custom video generator, without retraining of the original generator.
+</h1>
 
-
-
-<!--  Video Generation carousel -->
+<!-- Canny Video Generation carousel -->
 <section class="hero teaser">
       <div class="hero-body ">
     <div class="container is-max-desktop">
-      <h1 style="font-weight: bold; text-align: justify; font-size: 20px;">
-        We propose PP-Vctrl, a controllable video generation model that uses an auxiliary condition encoder to transform a text-to-video or image-to-video generation model into a custom video generator, without retraining of the original generator.
-    </h1>
-    
-    
-      <div id="results-carousel" class="carousel results-carousel">
+      
+    <div id="results-carousel" class="carousel results-carousel">
         
         <div class="item item-video1">
           <video poster="" id="header-video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/canny_full_size.mp4"
+            <source src="static/videos/canny_longvideo_case1.mp4"
             type="video/mp4">
           </video>
         <h2 class="subtitle has-text-centered",style="font-weight: bold">
@@ -155,31 +150,67 @@
 
         <div class="item item-video2">
           <video poster="" id="header-video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/mask_full_size.mp4"
+            <source src="static/videos/canny_longvideo_case2.mp4"
+            type="video/mp4">
+          </video>
+        <h2 class="subtitle has-text-centered">
+          "PPVCtrl-Canny can effortlessly assist creators in achieving style transfer from anime-style videos to real-world videos by leveraging the video's edge features as control conditions."
+        </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End-->
+
+<!--  Mask Video Generation carousel -->
+<section class="hero teaser">
+      <div class="hero-body ">
+    <div class="container is-max-desktop">
+      
+    <div id="results-carousel" class="carousel results-carousel">
+        
+        <div class="item item-video1">
+          <video poster="" id="header-video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/mask_longvideo_case1.mp4"
+            type="video/mp4">
+          </video>
+        <h2 class="subtitle has-text-centered",style="font-weight: bold">
+          " PPVCtrl-Mask allows creators to easily perform diverse video editing tasks by selecting the specific content to be edited, enabling efficient customization."
+        </h2>
+        </div>
+
+        <div class="item item-video2">
+          <video poster="" id="header-video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/mask_longvideo_case2.mp4"
             type="video/mp4">
           </video>
         <h2 class="subtitle has-text-centered">
           " PPVCtrl-Mask allows creators to easily perform diverse video editing tasks by selecting the specific content to be edited, enabling efficient customization."
         </h2>
         </div>
-
-        <div class="item item-video3">
-          <video poster="" id="header-video3" autoplay controls muted loop height="100%">
-            <source src="static/videos/canny_full_size.mp4"
-            type="video/mp4">
-          </video>
-        <h2 class="subtitle has-text-centered">
-          "PPVCtrl-Pose enables creators to effortlessly achieve customized generation of character motion videos by extracting pose conditions."
-        </h2>
-        </div>
-
-        
-        
       </div>
     </div>
   </div>
 </section>
-<!-- End Subject Driven Video Generation carousel -->
+<!-- End-->
+
+
+        
+<!-- 仅保留第一个视频项 -->
+<section class="hero teaser">
+  <div class="hero-body ">
+    
+<div class="item item-video1" style="text-align: center;">  <!-- Ensure the video is centered -->
+  <video id="header-video1" autoplay controls muted loop width="70%" height="auto">
+    <source src="static/videos/pose_longvideo_case1.mp4" type="video/mp4">
+  </video>
+  <h2 class="subtitle has-text-centered">
+    "PPVCtrl-Pose enables creators to effortlessly achieve customized generation of character motion videos by extracting pose conditions."
+  </h2>
+  </div>
+</div>
+</section>
 
 
 
@@ -262,7 +293,7 @@
 
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<!-- <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -275,10 +306,10 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End paper abstract -->
 
-<section class="section hero is-small is-light">
+<!-- <section class="section hero is-small is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
@@ -296,11 +327,11 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 
-<section class="section is-small">
+<!-- <section class="section is-small">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
@@ -319,34 +350,34 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
-    <div class="container">
+    <div class="container"> -->
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <!-- <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
 
-          <div class="publication-video">
+          <div class="publication-video"> -->
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/xcvnHhfDSGM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <!-- <iframe src="https://www.youtube.com/embed/xcvnHhfDSGM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 
 <!--BibTex citation -->
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{molad2023dreamix,
@@ -356,19 +387,19 @@
   year={2023}
 }</code></pre>
   </div>
-</section>
+</section> -->
 <!-- End BibTex citation -->
 
-<!--Acknowledgements -->
+<!-- Acknowledgements
 <section class="section" id="Acknowledgements">
   <div class="container is-max-desktop content">
     <h2 class="title">Acknowledgements</h2>
   We thank Ely Sarig for creating the video, Jay Tenenbaum for the video narration, Amir Hertz for the implementation of our eval baseline, Daniel Cohen-Or, Assaf Zomet, Eyal Segalis, Matan Kalman and Emily Denton for their valuable inputs that helped improve this work.
   </div>
-</section>
+</section> -->
 <!--End Acknowledgements -->
   
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -384,13 +415,13 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 <!-- Statcounter tracking code -->
 
 <!-- Default Statcounter code for Dreamix
 https://dreamix-video-editing.github.io -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 var sc_project=12843789; 
 var sc_invisible=1; 
 var sc_security="e9c3bf5f"; 
@@ -403,7 +434,7 @@ href="https://statcounter.com/" target="_blank"><img
 class="statcounter"
 src="https://c.statcounter.com/12843789/0/e9c3bf5f/1/"
 alt="Web Analytics"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript> -->
 
 <!-- End of Statcounter Code -->
 
