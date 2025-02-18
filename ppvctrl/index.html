@@ -125,9 +125,9 @@
 
 
 
-<h1 style="text-align: center; font-size: 18px; margin-bottom: 20px;">
+<!-- <h1 style="text-align: center; font-size: 18px; margin-bottom: 20px;">
   We propose PP-Vctrl, a controllable video generation model that uses an auxiliary condition encoder to transform a text-to-video or image-to-video generation model into a custom video generator, without retraining of the original generator.
-</h1>
+</h1> -->
 
 <h2 class="title is-3" style="text-align: center; margin-top: 20px;">DEMOS SHOW</h2>
 
@@ -196,23 +196,37 @@
 <!-- End-->
 
 
-        
-<!-- 仅保留第一个视频项 -->
+<!--  Pose Video Generation carousel -->
 <section class="hero teaser">
   <div class="hero-body ">
+<div class="container is-max-desktop">
+  
+<div id="results-carousel" class="carousel results-carousel">
     
-<div class="item item-video1" style="text-align: center;">  <!-- Ensure the video is centered -->
-  <video id="header-video1" autoplay controls muted loop width="70%" height="auto">
-    <source src="static/videos/pose_longvideo_case1.mp4" type="video/mp4">
-  </video>
-  <h2 class="subtitle has-text-centered">
-    "PPVCtrl-Pose enables creators to effortlessly achieve customized generation of character motion videos by extracting pose conditions."
-  </h2>
+    <div class="item item-video1">
+      <video poster="" id="header-video1" autoplay controls muted loop height="100%">
+        <source src="static/videos/pose_longvideo_case1.mp4"
+        type="video/mp4">
+      </video>
+    <h2 class="subtitle has-text-centered",style="font-weight: bold">
+      "PPVCtrl-Pose enables creators to effortlessly achieve customized generation of character motion videos by extracting pose conditions."
+    </h2>
+    </div>
+
+    <div class="item item-video2">
+      <video poster="" id="header-video2" autoplay controls muted loop height="100%">
+        <source src="static/videos/pose_longvideo_case2.mp4"
+        type="video/mp4">
+      </video>
+    <h2 class="subtitle has-text-centered">
+      
+      "PPVCtrl-Pose enables creators to effortlessly achieve customized generation of character motion videos by extracting pose conditions.""
+    </h2>
+    </div>
   </div>
 </div>
+</div>
 </section>
-
-
 
 <!-- Canny v2v -->
 <section class="hero is-small">
