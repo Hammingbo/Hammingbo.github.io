@@ -230,7 +230,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container  is-max-desktop">
-      <h2 class="title is-3" style="text-align: center;">PP-VCtrl-Canny-I2V</h2>
+      <h2 class="title is-3" style="text-align: center;">PP-VCtrl-I2V-Canny</h2>
       <p class="subtitle" style="text-align: left; margin-top: 10px;">
         First, you should perform Canny edge detection on the any video to obtain the corresponding Control Video. 
         Then, use ControlNet-Canny to redraw the first frame of the video to obtain the Reference Image. 
@@ -259,7 +259,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container  is-max-desktop">
-      <h2 class="title is-3" style="text-align: center;">PP-VCtrl-Mask-I2V</h2>
+      <h2 class="title is-3" style="text-align: center;">PP-VCtrl-I2V-Mask</h2>
       <p class="subtitle" style="text-align: left; margin-top: 10px;">
         First, you are expected to select the subject to be edited from the your video and use SAM2 for subject segmentation to obtain the control video. 
         Then, use Image Inpainting method to edit the first frame of the video to obtain the reference image. 
@@ -288,7 +288,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container  is-max-desktop">
-      <h2 class="title is-3" style="text-align: center;">PP-VCtrl-Pose-I2V</h2>
+      <h2 class="title is-3" style="text-align: center;">PP-VCtrl-I2V-Pose</h2>
       <p class="subtitle" style="text-align: left; margin-top: 10px;">
         First, you can use a pose detection model to obtain the sequence of poses from the video you provide. 
         Then, use ControlNet-Pose to regenerate the first frame of the video, obtaining the reference image. 
@@ -326,7 +326,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent breakthroughs in text-to-video diffusion models have significantly advanced the field, enabling the automatic generation of videos from natural language descriptions. While text prompts can inspire creative video generation, they often lack fine-grained control over visual elements such as appearance, layout, and motion dynamics. Unlike existing methods that focus on domain-specific problems, we propose a unified model for controllable video generation. Our approach supports a variety of control conditions, including Canny edge maps, human pose maps, and mask maps, and demonstrates robust scalability, making it suitable for more complex control scenarios. Additionally, this control structure is compatible with both text-to-video and image-to-video models, allowing for a broad range of video generation tasks.
+            In recent years, text-to-video diffusion models have transformed the landscape of video generation, yet they often struggle with fine-grained control over spatiotemporal dynamics. This paper introduces PP-VCtrl, a novel architecture that enhances existing text-to-video models by integrating a unified conditional encoder, enabling versatile control through auxiliary conditioning signals such as Canny edges, human poses, and segmentation masks. Our approach maintains the integrity of the original generator while allowing for efficient incorporation of diverse control inputs. We demonstrate that PP-VCtrl achieves enhanced performance across various video generation tasks, significantly improving control fidelity and visual quality compared to previous methods. Comprehensive experiments validate the effectiveness of our framework, showcasing its potential for practical applications in controllable video generation.
           </p>
         </div>
       </div>
@@ -341,7 +341,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3" style="text-align: center;">Method Overview: PP-VCtrl for Text-to-Video Diffusion</h2>
+        <h2 class="title is-3" style="text-align: center;">Method Overview</h2>
         <div class="content has-text-justified">
           
           <center>
@@ -366,7 +366,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container  is-max-desktop">
-      <h2 class="title is-3" style="text-align: center;">Comparisons</h2>
+      <h2 class="title is-3" style="text-align: center;">Comparisons with Other Methods</h2>
     
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
